@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,10 +10,13 @@ body {
     text-align: center; /* Center text globally */
     background-color: gray;
   }
-  
+  a {
+    text-decoration: none;
+    color: #FFF;
+  }
   header, footer {
     font-family: 'Poppins', sans-serif;
-    background-color: #dc3545;
+    background-color: #E02A1F;
     color: #030303;
     padding: 50px;
   }
@@ -53,6 +60,269 @@ height: auto;
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
+  }
+
+  #header {
+    display: flex;
+    background-color: #2C2C2C;
+    color: #FFF;
+    justify-content:space-between;
+    gap: 32px;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+  }
+
+  #menuOptions {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    
+  }
+
+  #contactBtn {
+    display: flex;
+    height: 32px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: #E02A1F;
+    border-width: 0px;
+    justify-self: flex-end;
+    align-self: flex-end;
+    color: #FFF;
+  
+  }
+
+  #innerTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #titleImage {
+    width: 393px;
+    height: 393px;
+  }
+
+  #title {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 60px */
+    letter-spacing: -0.88px;
+    width: 590px;
+  }
+
+  #titleContainer {
+    flex-shrink: 0;
+    background-color:#E02A1F;
+    background: url(images/car_background.png), lightgray 50% / cover no-repeat;
+    background-size: 100%;
+    padding-bottom: 48px;
+  }
+
+  #serviceContainer,
+  #contactUsContainer{
+    display: flex;
+    justify-content: space-between;
+    background: #2C2C2C;
+    color: #FFF;
+    padding: 40px 80px 80px;
+    gap: 12px;
+  }
+
+  .sectionTitle {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -1.408px;
+    color: #FFF;
+  }
+
+  #serviceList {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.528px;
+  }
+
+  
+  #chooseUsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: #545454;
+
+  }
+
+  #cardContainer {
+    display: flex;
+    gap: 24px;
+  }
+
+  .card {
+    width: 300px;
+    height: 300px;
+    background-color: #D8D6D6;
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 16px;
+  }
+  
+.cardImage {
+  width: 40px;
+  height: 40px;
+  
+}
+
+.cardTitle {
+  align-self: stretch;
+    color:  black;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.396px;
+    text-align: left;
+}
+
+  .cardDescription {
+    align-self: stretch;
+    color: var(--Gray-5, #545454);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.352px;
+    text-align: left;
+  }
+
+  #contactUsContainer {
+    flex-direction: column;
+    text-align: left;
+    color: #FFF;
+    justify-content: flex-start;
+    gap: 48px;
+    padding-bottom: 80px;
+  }
+
+  #contactUsContentContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 120px;
+  }
+
+  #contactUsDescription {
+  }
+
+  #contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 120px;
+
+  }
+
+  .contactInfo {
+    display: flex;
+    gap: 8px;
+  }
+
+  #whoWeAreContainer {
+    display: flex;
+    background-color: #E02A1F;
+    text-align: left;
+    height: 650px;
+  }
+
+  #whoWeAreContentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px;
+    color: #FFF;
+    max-width: 640px;
+  }
+
+  .bioSection {
+
+  }
+
+  .bioName {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.44px;
+    align-self: stretch;
+  }
+
+  .bioDescription {
+    color: #FFF;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.352px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #2C2C2C;
+    color: #FFF;
+  }
+
+  #footerContainer {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .footerSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footerTitle {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.396px;
+  }
+
+  .footerContent {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.308px;
   }
 
   .b-example-divider {
