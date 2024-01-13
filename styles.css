@@ -81,6 +81,18 @@ height: auto;
     
   }
 
+  #home,
+  #about-us,
+  #services,
+  #testimonials,
+  #gallery {
+    color: #B8B7B7;
+  }
+
+  #home {
+    color: #FFF;
+  }
+
   #contactBtn {
     display: flex;
     height: 32px;
@@ -94,7 +106,14 @@ height: auto;
     justify-self: flex-end;
     align-self: flex-end;
     color: #FFF;
-  
+    text-decoration: none;
+  }
+
+  #contactBtn:hover {
+    background-color: #545454;
+  }
+  #contactBtn:active {
+    background-color: #E02A1F;
   }
 
   #innerTitle{
@@ -123,7 +142,7 @@ height: auto;
   #titleContainer {
     flex-shrink: 0;
     background-color:#E02A1F;
-    background: url(images/car_background.png), lightgray 50% / cover no-repeat;
+    background: url(images/car_background.png), lightgrey 50% / cover no-repeat ;
     background-size: 100%;
     padding-bottom: 48px;
   }
@@ -137,6 +156,10 @@ height: auto;
     padding: 40px 80px 80px;
     gap: 12px;
   }
+
+#serviceContainer {
+  gap: 150px;
+}
 
   .sectionTitle {
     font-size: 64px;
@@ -153,9 +176,76 @@ height: auto;
     font-style: normal;
     font-weight: 600;
     letter-spacing: -0.528px;
+    background-color: #2C2C2C;
+    flex-grow: 1;
+    padding-top: 32px;
   }
 
-  
+  #accordionFlushExample {
+    --bs-accordion-btn-icon: "images/plus.svg";
+
+  }
+
+  #first-accordion-button,
+  #second-accordion-button {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.528px;
+  }
+
+  #first-accordion-button::after,
+  #second-accordion-button::after {
+    background-image: url("images/plus.svg");
+  }
+
+  #first-accordion-button:not(.collapsed)::after,
+  #second-accordion-button:not(.collapsed)::after {
+    background-image: url("images/minus.svg");
+  }
+
+  .accordion-header {
+    --bs-accordion-btn-bg: #2C2C2C;
+    --bs-accordion-active-bg: #2C2C2C;
+    --bs-accordion-color: #FFF;
+    --bs-accordion-active-color: #FFF;
+  }
+
+  .accordion-body {
+    background-color: #2C2C2C;
+    color: #FFF;
+  }
+  .accordion-button {
+    background-color: #2C2C2C;
+    color: #FFF;
+    --bs-accordion-btn-color: #FFF;
+  }
+
+  .accordion-body {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .sub-header {
+    color: #D8D6D6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.44px;
+  }
+
+  .accordion_paragraph {
+    color: #B8B7B7;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.352px;
+  }
+
   #chooseUsContainer {
     display: flex;
     flex-direction: column;
@@ -173,6 +263,8 @@ height: auto;
   #cardContainer {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .card {
@@ -249,7 +341,8 @@ height: auto;
     display: flex;
     background-color: #E02A1F;
     text-align: left;
-    height: 650px;
+    flex-grow: 1;
+
   }
 
   #whoWeAreContentContainer {
@@ -362,6 +455,16 @@ height: auto;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
+  .nav{
+    color: #B8B7B7;
+  }
+  .nav-link{
+    color: #B8B7B7
+  }
+  .nav-item{
+    color: #B8B7B7
+  }
+
 
   .btn-bd-primary {
     --bd-violet-bg: #712cf9;
@@ -387,3 +490,9 @@ height: auto;
   .bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
   }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
