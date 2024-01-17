@@ -8,8 +8,12 @@ body {
     margin: 0;
     padding: 0;
     text-align: center; /* Center text globally */
-    background-color: gray;
+    background-color: red;
+    min-width: 100%;
+    min-height: 100%;
+    float: left;
   }
+
   a {
     text-decoration: none;
     color: #FFF;
@@ -516,10 +520,13 @@ height: auto;
   height: 300px;
 }
 
-/*@media only screen and (max-width: 950px) and (min-width: 420px)  {*/
-  body {
-    background-color: #6528e0;
-    min-width: 100%;
-    float: left;
+@media only screen and (max-width: 950px) and (min-width: 300px)  {
+  #serviceContainer {
+    flex-direction: column;
+    gap: 20px;
   }
-/*}*/
+
+  #contactUsContentContainer {
+    gap: 20px;
+  }
+}
