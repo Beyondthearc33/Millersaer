@@ -12,6 +12,8 @@ body {
     min-width: 100%;
     min-height: 100%;
     float: left;
+
+    --primary-color: #E02A1F;
   }
 
   a {
@@ -20,7 +22,7 @@ body {
   }
   header, footer {
     font-family: 'Poppins', sans-serif;
-    background-color: #E02A1F;
+    background-color: var(--primary-color);
     color: #030303;
     padding: 50px;
   }
@@ -106,7 +108,7 @@ height: auto;
     align-items: center;
     gap: 10px;
     border-radius: 8px;
-    background-color: #E02A1F;
+    background-color: var(--primary-color);
     border-width: 0px;
     justify-self: flex-end;
     align-self: flex-end;
@@ -118,7 +120,7 @@ height: auto;
     background-color: #545454;
   }
   #contactBtn:active {
-    background-color: #E02A1F;
+    background-color: var(--primary-color);
   }
 
   #innerTitle{
@@ -142,14 +144,19 @@ height: auto;
     line-height: 150%; /* 60px */
     letter-spacing: -0.88px;
     width: 590px;
+    padding-bottom: 48px;
   }
 
   #titleContainer {
-    flex-shrink: 0;
-    background-color:#E02A1F;
-    background: url(images/car_background.png), lightgrey 50% / cover no-repeat ;
-    background-size: 100%;
-    padding-bottom: 48px;
+    background-image: url(images/car_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .background-tint {
+    background-color: rgba(224, 42, 31, 0.85);
+    background-blend-mode: multiply;
   }
 
   #serviceContainer,
@@ -344,7 +351,7 @@ height: auto;
 
   #whoWeAreContainer {
     display: flex;
-    background-color: #E02A1F;
+    background-color: var(--primary-color);
     text-align: left;
     flex-grow: 1;
     flex-wrap: wrap;
