@@ -151,11 +151,12 @@ height: auto;
     background-image: url(images/car_background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background: url(images/car_background.png), lightgrey 50% / cover no-repeat ;
 
   }
 
   .background-tint {
-    background-color: rgba(224, 42, 31, 0.85);
+    /* background-color: rgba(224, 42, 31, 0.85); */
     background-blend-mode: multiply;
   }
 
