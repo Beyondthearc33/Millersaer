@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miller's Automotive Equipment Repair</title>
+  <title>Miller's Automotive Equipment Repair Gallery</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -13,19 +14,80 @@
 </head>
 <body>
 
-  <div id="header">
-    <div id="menuOptions">
-      <img src="images/header_logo.svg" alt="a cute lil logo for millers AER">
-      <div>Home</div>
-      <div style="color: #B8B7B7">About Us</div>
-      <div style="color: #B8B7B7">Services</div>
-      <div style="color: #B8B7B7">Testimonials</div>
-      <div style="color: #B8B7B7">Gallery</div>
-    </div>
-    <a href="tel:8016965005">
-      <button id="contactBtn">Contact us</button>
+<div id="header">
+  <div id="menuOptions">
+    <a href="index.html">
+      <img  src="images/header_logo.svg" alt="a cute lil logo for millers AER">
     </a>
+    <ul class="nav nav-underline">
+      <li class="nav-item">
+        <a id="home" class="nav-link active" aria-current="page" href="index.html" style="color: #B8B7B7">Home</a>
+      </li>
+      <li class="nav-item">
+        <a id="about-us" class="nav-link"  href="about_us.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a id="services" class="nav-link" href="services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a id="testimonials" class="nav-link" href="testimonials.html">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a id="gallery" class="nav-link" href="gallery.html" style="color: #FFF">Gallery</a>
+      </li>
+    </ul>
+
   </div>
+  <a href="tel:8016965005" style="text-decoration:none">
+    <button id="contactBtn">Contact us</button>
+  </a>
+</div>
+
+
+<div id="gallery-container">
+  <div class="sectionTitle">Gallery</div>
+  <div id="photo-grid">
+    <img class="gallery-image" src="images/IMG_6231.jpeg"/>
+    <img class="gallery-image" src="images/IMG_6459.jpeg"/>
+    <img class="gallery-image" src="images/IMG_6550.jpeg"/>
+    <img class="gallery-image" src="images/IMG_6555.jpeg"/>
+    <img class="gallery-image" src="images/IMG_6595.jpeg"/>
+    <img class="gallery-image" src="images/IMG_6607.jpeg"/>
+    <img class="gallery-image" src="images/IMG_6721.jpeg"/>
+    <img class="gallery-image" src="images/IMG_6796.jpeg"/>
+    <img class="gallery-image" src="images/IMG_7078.jpeg"/>
+    <img class="gallery-image" src="images/IMG_7109.jpeg"/>
+    <img class="gallery-image" src="images/IMG_7112.jpeg"/>
+    <!-- TODO: Fix this bottom image -->
+    <img class="gallery-image" src="images/Lifts.png"/>
+  </div>
+
+</div>
+
+<div id="lightbox">
+  <div id="closeBtn">
+    <img src="images/plus.svg" style="transform: rotate(45deg);">
+    <div>Close</div>
+  </div>
+  <div id="lightboxImagewButtons">
+    <div class="nextBtn" id="leftBtn">
+      <img src="images/Chevrons.svg">
+    </div>
+    <div id="lightboxImageContainer">
+      <img id="lightboxImage" src="images/IMG_6231.jpeg">
+    </div>
+    <div class="nextBtn" id="rightBtn">
+      <img src="images/Chevrons.svg" style="transform: rotate(180deg);">
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>
 
   
 
