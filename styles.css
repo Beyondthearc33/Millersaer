@@ -558,6 +558,8 @@ height: auto;
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
+  padding: 24px;
+  visibility: hidden;
 }
 
 #closeBtn{
