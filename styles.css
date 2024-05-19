@@ -529,12 +529,11 @@ height: auto;
   justify-content: center;
   flex-wrap: wrap;
   border-radius: 25px;
-  border-style: solid;
-  border-color: white;
   padding: 0px;
   width: fit-content;
   height: fit-content;
 }
+
 
 .gallery-image {
   width: 300px;
@@ -562,12 +561,23 @@ height: auto;
   visibility: hidden;
 }
 
+#lightboxImagewButtons {
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+#closeBtnContainer {
+  padding-left: 42px;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
 #closeBtn{
   display: flex;
   gap: 4px;
-  justify-self: flex-start;
-  align-self: flex-start;
-  padding-left: 42px;
+  padding: 4px;
+  border-radius: 24px;
+
 }
 
 #lightboxImagewButtons{
@@ -576,8 +586,8 @@ height: auto;
 }
 
 #lightboxImage{
-  max-width: 1093px;
-  max-height: 820px;
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 .nextBtn{
@@ -589,6 +599,27 @@ height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.nextBtn:hover {
+  background-color: #ffffff90;
+}
+
+.nextBtn:active {
+  background-color: #ffffff75;
+}
+
+#closeBtn:hover {
+  background-color: #ffffff20;
+}
+
+.gallery-image:hover {
+  transform: translateX(5px) translateY(-2%);
+  box-shadow: -21px 21px 94px -2px rgba(224,42,31,0.5);
+  -webkit-box-shadow: -21px 21px 94px -2px rgba(224,42,31,0.5);
+  -moz-box-shadow: -21px 21px 94px -2px rgba(224,42,31,0.5);
+
 }
 
 
